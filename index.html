@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Trivia Game</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+</head>
+<body>
+     <main role="main">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">World Cup Trivia </h1>
+                <p id="time-remaining" class="lead" style="display: none;"><i class="fa fa-clock-o" aria-hidden="true"></i> Time remaining: 
+                    <span id="time">30</span>
+                </p>
+                <button class="btn btn-primary btn-lg startGame"type="button">Start</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row game-over" style="display: none;">
+                <div class="col-sm-8">
+                    <h2>GAME OVER!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class ="col-sm-8">
+                    <div class="list-group options">
+                        <h3 id="question"></h3>
+                    </div>
+                </div>
+                <div class="col-sm-4 result" style="display: none;">
+                    <h3>Your guesses</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Corrects:
+                            <span class="badge badge-success badge-pill correct">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Incorrects:
+                            <span class="badge badge-danger badge-pill incorrect">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Unanswered:
+                            <span class="badge badge-warning badge-pill unanswered">0</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-success great-job" style="display: none;">
+                        Great Job! 
+                    </div>
+                    <h3 class=""> </h3>
+                    <h3 class="out-of-time mt-4 text-danger" style="display: none;">Out of time! 
+                        <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                    </h3>
+                    <div id="correct-answer" class="mt-4" style="display: none;">
+                        <h4>The correct answer is: <span class="answer"></span></h4>
+                    </div>
+                 
+                </div>
+            </div>
+    
+        </div>     
+    </main>
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- <script src="assets/js/game.js" ></script> -->
+    <script src="assets/js/app.js" ></script>    
+    </body>
+</html>
